@@ -1,3 +1,12 @@
 <h1><%= @task.title %></h1>
-<p><%= @task.details %></p>
-<%= @task.completed %>
+
+<div>
+  <p><%= @task.details %></p>
+</div>
+<div>
+  <p>Completed : <%= @task.completed %></p>
+</div>
+
+<div>
+  <%= link_to "Edit", edit_path %>
+</div>
